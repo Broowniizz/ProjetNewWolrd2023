@@ -1,0 +1,140 @@
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(/assets/font/Roboto/Roboto-Regular.ttf);
+}
+body {
+    margin: 0;
+    font-family: "Roboto Regular";
+}
+li {
+    list-style: none;
+    padding: 0 20px;
+}
+header>nav>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    width: 30%;
+    margin: 0 auto;
+}
+header>nav{
+    width: 100vw;
+    position: fixed;
+    background-color: white;
+}
+header>nav>ul>li>a{
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight:bold;
+}
+header>nav>ul>li:not(:first-child){
+    border-left: 2px solid black;
+}
+.logo{
+    background-image: url(/assets/image/new-world-amazon-jeu.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+main>section>h2{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+    
+main>section>img{
+    height: 12rem;
+}
+main>.synthese{
+    text-align: center;
+    padding: 2rem 21rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+main>section>p{
+    padding:2rem;
+}
+main>section>.btn{
+    background-color:orange;
+    padding: 1rem;
+    
+    
+    
+}
+main>section>.btn>a{
+    color: white;
+    text-decoration: none;
+}
+main>.actu-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10%;
+}
+main>.actu-main>.container{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 8%;
+    
+}
+main>.actu-main>.container>.actu{
+    width: 28%;
+    margin: 2rem;
+    
+}
+.content>img{
+    width: 100%;
+}
+main>.actu-main>.container>.actu>.content{
+    background-color:rgb(59, 53, 53);
+    height: 100%;
+    padding: 0 auto;
+}
+.content>h5,p{
+    padding: 0 5%;
+}
+.content>h5{
+    color: white;
+    font-size: 0.9rem;
+}
+.content>p{
+    color: white;
+    font-size: 1rem;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+footer>img{
+    height: 6vh;
+    padding: 0 4rem;
+}
+footer>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 76%; 
+}
+footer>ul>li{
+    padding: 0 1rem;
+}
+footer>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+footer>ul>li:not(:first-child){
+    border-left: 2px solid rgb(255, 255, 255);
+}
