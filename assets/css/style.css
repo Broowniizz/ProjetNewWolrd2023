@@ -6,16 +6,17 @@ body {
     margin: 0;
     font-family: "Roboto Regular";
 }
-li {
+/* NAV */
+header>nav>ul>li {
     list-style: none;
     padding: 0 20px;
 }
 header>nav>ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 30px 0;
-    width: 30%;
+    width: 50%;
     margin: 0 auto;
 }
 header>nav{
@@ -32,6 +33,8 @@ header>nav>ul>li>a{
 header>nav>ul>li:not(:first-child){
     border-left: 2px solid black;
 }
+/* Fin Nav */
+/* Main */
 .logo{
     background-image: url(/assets/image/new-world-amazon-jeu.jpg);
     background-position: center;
@@ -40,7 +43,7 @@ header>nav>ul>li:not(:first-child){
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 80px;
+    padding-top: 10%;
 }
 main>section>h2{
     color: rgb(255, 255, 255);
@@ -49,11 +52,11 @@ main>section>h2{
 }
     
 main>section>img{
-    height: 12rem;
+    height: 20vh;
 }
 main>.synthese{
     text-align: center;
-    padding: 2rem 21rem;
+    padding: 0 19%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,9 +112,11 @@ main>.actu-main>.container>.actu>.content{
     color: white;
     font-size: 1rem;
 }
+/* Fin main */
+/* debut footer */
 footer{
     background-color: rgb(0, 0, 0);
-    padding: 1rem;
+    padding: 1rem 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -120,13 +125,13 @@ footer{
 }
 footer>img{
     height: 6vh;
-    padding: 0 4rem;
+    padding: 0 3rem;
 }
 footer>ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 76%; 
+    width: 50%; 
 }
 footer>ul>li{
     padding: 0 1rem;
@@ -137,4 +142,52 @@ footer>ul>li>a{
 }
 footer>ul>li:not(:first-child){
     border-left: 2px solid rgb(255, 255, 255);
+}
+/* fin footer */
+/* debut reponsive tablet*/
+@media screen and (max-width: 768px){
+
+    .synthese{
+        display: flex;
+        justify-content:center;
+    }
+    footer>img{
+        padding-left: 0%;
+    }
+}
+@media screen and (max-width: 425px){
+    
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .actu{
+        width: 80% !important
+    }
+    footer>ul{
+        flex-direction: column;
+    }
+    
+    header>nav>ul{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    header>nav>ul>li:not(:first-child){
+        border-left:none;
+
+    }
+    header>nav{
+        position: relative;
+    }
+    footer>ul>li:not(:first-child){
+        border-left:none;
+    }
+    footer>ul{
+        padding: 0;
+        text-align:  center;
+    }
+    .logo{
+        text-align: center;
+    }
 }
